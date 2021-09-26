@@ -22,3 +22,18 @@ collections:
       - { label: 'Category', name: 'category', widget: 'hidden', default: 'workshop'}
       - { label: 'Excerpt', name: 'excerpt_separator', widget: 'hidden', default: '<!--more-->'}
       - { label: 'Another Category', name: 'category2', widget: 'select', options: ["cat1", "cat2", "cat3"], default: 'cat1'}
+  - name: 'project'
+    label: 'Project'
+    folder: '_projects/'
+    create: true
+    slug: '{{year}}-{{month}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'project' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image Path', name: 'image_path', widget: 'hidden', default: '' }
+      - { label: 'Project Order', name: 'orderid', widget: 'number', value_type: 'int'}     
+      - { label: 'Project Date', name: 'date', widget: 'datetime' }
+      - { label: 'Blurb', name: 'blurb', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
