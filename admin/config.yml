@@ -8,8 +8,8 @@ backend:
 # publish_mode: editorial_workflow
 media_folder: 'assets/uploads'
 collections:
-  - name: 'blog'
-    label: 'Blog'
+  - name: 'note'
+    label: 'Note'
     folder: '_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
