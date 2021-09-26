@@ -34,6 +34,67 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Image Path', name: 'image_path', widget: 'hidden', default: '' }
       - { label: 'Project Order', name: 'orderid', widget: 'number', value_type: 'int'}     
-      - { label: 'Project Date', name: 'date', widget: 'datetime' }
+      - { label: 'Project Date', name: 'date', widget: 'datetime',date_format: "YYYY-MM-DD",  time_format: false, format: "YYYY-MM-DD" }
       - { label: 'Blurb', name: 'blurb', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Project Type", name: "project_type", widget: "select", options: ["personal", "professional"]}
+    sortable_fields: ['date','orderid','title']
+    summary: "{{date}} : {{title}}"
+    view_groups:
+      - label: Year
+        field: date
+        # groups items based on the value matched by the pattern
+        pattern: \d{4}
+      - label: Drafts
+        field: draft
+    view_filters:
+      - label: '2020 - 2022 Posts'
+        field: date
+        pattern: '2020|2021|2022'
+      - label: '2017 - 2019 Posts'
+        field: date
+        pattern: '2017|2018|2019'
+      - label: '2014 - 2016 Posts'
+        field: date
+        pattern: '2014|2015|2016'
+      - label: Drafts
+        field: draft
+        pattern: true
+  - name: 'personal_project'
+    label: 'Project - Personal'
+    folder: '_projects/'
+    create: true
+    slug: '{{year}}-{{month}}-{{slug}}'
+    filter: {field: "project_type", value: "personal"}
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'project' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image Path', name: 'image_path', widget: 'hidden', default: '' }
+      - { label: 'Project Order', name: 'orderid', widget: 'number', value_type: 'int'}     
+      - { label: 'Project Date', name: 'date', widget: 'datetime',date_format: "YYYY-MM-DD",  time_format: false, format: "YYYY-MM-DD" }
+      - { label: 'Blurb', name: 'blurb', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Project Type", name: "project_type", widget: 'hidden', default: 'personal'}
+    sortable_fields: ['date','orderid','title']
+    summary: "{{date}} : {{title}}"
+  - name: 'pro_project'
+    label: 'Project - Professional '
+    folder: '_projects/'
+    create: true
+    slug: '{{year}}-{{month}}-{{slug}}'
+    filter: {field: "project_type", value: "professional"}
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'project' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image Path', name: 'image_path', widget: 'hidden', default: '' }
+      - { label: 'Project Order', name: 'orderid', widget: 'number', value_type: 'int'}     
+      - { label: 'Project Date', name: 'date', widget: 'datetime',date_format: "YYYY-MM-DD",  time_format: false, format: "YYYY-MM-DD" }
+      - { label: 'Blurb', name: 'blurb', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Project Type", name: "project_type", widget: 'hidden', default: 'professional'}
+    sortable_fields: ['date','orderid','title']
+    summary: "{{date}} : {{title}}"
