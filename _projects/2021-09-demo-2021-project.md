@@ -3,7 +3,7 @@ layout: project
 title: Demo 2021 Project
 image_path: ""
 orderid: 24
-date: September 20, 2021
+date: 2021-09-26
 blurb: Develop new solution for Airline to minimise wastage by tracking and
   optimising serviceware inventory
 ---
