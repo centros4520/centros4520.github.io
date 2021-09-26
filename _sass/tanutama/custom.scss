@@ -93,6 +93,9 @@ Site header
   font-weight: bold;
   font-family: $base-font-family1;
   color: $custom-brand-color-primary;
+  text-indent: 300%;
+  white-space: nowrap;
+  overflow: hidden;
   &:visited {
     color:$custom-brand-color-primary
   }
@@ -112,7 +115,28 @@ a.site-title:hover {
     font-size: 1.2em;
   }
 }
-
+.cd-logo {
+  // // display: block;
+  // // text-indent: -9999px;
+  // // width: 100px;
+  // // height: 82px;
+  // // background: url("/assets/jekyll-notext-light-solid.png");
+  // background: url("/assets/jekyll-logo.svg");
+  // // background-size: 100px 82px;
+  // // content: url("/assets/jekyll-notext-light-solid.png");
+  // display: inline-block;
+  // position: relative;
+  // width: 100px;
+  // top: 0px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:40px;
+  width: 200px;
+  background: url('/assets/alb.svg') bottom center;
+  background-size: 100%;
+}
 /* -------------------------------- 
 
 Section Heading
