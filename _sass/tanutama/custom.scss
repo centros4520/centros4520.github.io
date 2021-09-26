@@ -1,0 +1,450 @@
+@charset "utf-8";
+// Import Mixin.
+@import "../custom/mixin";
+@import "../custom/mixin-grid";
+
+// Define defaults for each variable.
+$base-font-family1: 'Oswald',sans-serif !default;
+$base-font-family2: 'Playfair Display', serif;
+$base-font-family3: 'Roboto',sans-serif;
+$base-font-size: 18px !default;
+$custom-brand-color-primary:#f51010; //#f92672;
+
+
+//Used in Homepage and Section Title
+$spacer: 20px;
+/* -------------------------------- 
+
+Basic styling
+
+-------------------------------- */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-font-family1;
+  font-weight: 500;
+}
+
+// a, a:link, a:visited {
+//   color: $custom-brand-color-primary;
+// }
+
+// a:hover {
+//   color: darken( $custom-brand-color-primary, 30% );//#900;
+// }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -99px;
+  visibility: hidden;
+}
+
+a.active {
+  font-weight: 600;
+}
+
+a{
+   color: $custom-brand-color-primary;
+   &.animated{
+      background-image: linear-gradient(180deg, transparent 90%, $custom-brand-color-primary 0);
+      background-size: 0 100%;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      @include transition(transition, background-size .4s ease);
+      &:hover {
+        background-size: 100% 100%;
+        cursor: pointer;
+        text-decoration: none;
+        color: darken( $custom-brand-color-primary, 90% );//#900;
+      }
+    }
+    &:link,
+    &:visited {
+      color: $custom-brand-color-primary;
+    };
+    &:focus,
+    &:hover {
+      color: darken( $custom-brand-color-primary, 90% );//#900;
+    }
+}
+
+/* -------------------------------- 
+
+Site header
+
+-------------------------------- */
+.site-header {
+  border-top: 0px solid $grey-color-dark;
+  border-bottom: 0px solid $grey-color-light;
+}
+
+.site-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: $base-font-family1;
+  color: $custom-brand-color-primary;
+  &:visited {
+    color:$custom-brand-color-primary
+  }
+}
+
+a.site-title:hover {
+  // color: darken($custom-brand-color-primary,30);
+  text-decoration: none;
+}
+
+.site-title,
+.site-nav {
+  float: none;
+}
+@include media-query($on-palm) {
+  .site-title {
+    font-size: 1.2em;
+  }
+}
+
+/* -------------------------------- 
+
+Section Heading
+
+-------------------------------- */
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: ($spacer * 2);
+  text-align: center;
+  position: relative;
+  @include relative-font-size(2.5);
+  line-height: 1.2em;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 1px;
+    background: #222;
+  }
+}
+article.post{
+  .section-title{
+    text-transform:none;
+    //line-height:2rem;
+  }
+}
+
+.custom-divider {
+    width: 32px;
+    border-bottom: 5px solid #000
+}
+@include small-screen() {
+   .custom-divider  {
+        margin-top: 22px;
+        margin-bottom: 24px
+    }
+}
+@include medium-screen() {
+   .custom-divider  {
+       margin-top: 30px;
+       margin-bottom: 32px
+    }
+}
+
+
+/* -------------------------------- 
+
+Site Footer
+
+-------------------------------- */
+.site-footer {
+  border-top: 0px solid $grey-color-dark;
+}
+
+.footer-heading {
+  border-top: 5px solid $grey-color-light;
+  padding-top: 0px;
+  margin-bottom:0px;
+  height: 20px;  
+}
+
+/* -------------------------------- 
+
+Figure Caption
+https://stackoverflow.com/questions/8572952/border-length-smaller-than-div-width
+
+-------------------------------- */
+figure > img{
+  margin: 0 auto;
+}
+figcaption {
+  font-size: 0.85em;
+  text-align: center;
+  line-height: 1.4em;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+  padding-top: 10px
+}
+
+figcaption:before {
+  content: " ";
+  position: absolute;
+  left: 40%;
+  top: 0;
+  height: 1px;
+  width: 20%;
+  border-top: 5px solid $grey-color-light;
+}
+
+/* -------------------------------- 
+
+Content
+
+-------------------------------- */
+.blurb{
+  font-size:1.6em;
+  line-height: 1.2em;
+  margin: 1.2em 0;
+}
+.sublead{
+  font-size: 1.25em;
+  line-height: 1.3em;
+  color:$custom-brand-color-primary;
+  display: inline;
+  background: $custom-brand-color-primary;
+  color: #fff;
+  box-shadow: 10px 0 0 $custom-brand-color-primary, -10px 0 0 $custom-brand-color-primary;
+  &:after {
+    content: "";
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.project {
+  margin-bottom: 20px;
+}
+
+ul.archive-list,
+ul.category-list,
+ul.project-list,
+ul.note-list {
+  margin-left: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h2.project__title,
+h2.note__title {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-top: 0;
+}
+
+.project__year,
+.note__year {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 5px solid $grey-color-dark;
+  display: inline-block;
+  width: 10%;
+  min-width: 120px;
+}
+
+.project-list li,
+.note-list li {
+  margin-bottom: 1.5rem;
+}
+
+ul.project-list li:last-child,
+ul.note-list li:last-child {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1em;
+}
+
+.project-meta,
+.note-meta {
+  font-weight: bold
+}
+
+.note-meta {
+  font-size: 0.85em;
+  font-weight: normal;
+  color:  $grey-color;
+  font-family: $base-font-family1;
+  text-transform: uppercase
+}
+
+@include min-media-query($on-laptop) {
+  .project-list li,
+  .note-list li {
+    font-size: 1.2rem;
+  }
+}
+@include min-media-query($on-laptop) {
+  .wrapper{
+    font-size: 1.2rem;
+  }
+}
+
+/* -------------------------------- 
+
+Notes Paginator
+
+-------------------------------- */
+
+.page-number {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.paginator-list {
+  margin-top: 2rem;
+}
+
+.paginator-current {
+  display: inline;
+  padding:20px 30px;
+  background-color: $grey-color-light;
+}
+
+
+/* -------------------------------- 
+
+Code formatting
+http://richleland.github.io/pygments-css/
+http://vgaidarji.me/blog/2016/02/27/obsidian-theme-for-rouge-syntax-highlighter/
+http://anotherpeak.org/blog/tech/2016/09/22/syntax_highlighter_jekyll_rouge.html 
+rougify style monokai.sublime > _sass/codehighlight/monokai.sublime.css
+
+-------------------------------- */
+pre,
+code {
+  border: 0px solid $grey-color-light;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+// .highlighter-rouge .highlight,
+// .highlight {
+//   background: #333;
+// }
+
+/* -------------------------------- 
+
+Fixes
+
+-------------------------------- */
+//Solve Wrapping issue due to full-screen navigation
+.wrapper,.page-content,.footer-col {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing:initial;
+  box-sizing: initial;
+  &:after, &:before {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+  }
+}
+
+@include media-query($on-palm) {
+  .menu-separator {
+    display: none
+  }
+}
+
+
+/* -------------------------------- 
+
+Footer
+
+-------------------------------- */
+.footer-col-1 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(5% - (#{$spacing-unit} / 2));
+  width:         calc(5% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+  width:         calc(60% - (#{$spacing-unit} / 2));
+}
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+
+/**
+ * Icons
+ */
+
+ .svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #{$grey-color};
+  // margin-right: 5px;
+  vertical-align: text-top;
+}
+ 
+.social-media-list {
+  li {
+    display:inline-block;
+    .username{
+      display: none;
+    }
+   }
+  li + li {
+    padding-top: 0px;
+  }
+}
+
+.post-header {
+  h1{ margin-top: 0 }
+}
+/* -------------------------------- 
+
+// Import partials.
+
+-------------------------------- */
+@import
+  "custom/header-fullscreen",
+  "custom/homepage",
+  //"custom/homepage-project",
+  "custom/homepage-featured",
+  "custom/homepage-til",
+  "custom/project-list",
+  "custom/project-featured"
+  // "code/monokai.sublime"
+;

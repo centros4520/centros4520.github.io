@@ -1,0 +1,47 @@
+<!-- https://codyhouse.co/demo/full-screen-pop-out-navigation/index.html -->
+<header class="cd-header">
+		<div class="cd-logo">
+		{% assign page_paths = site.header_pages | default: default_paths %}
+    	<a class="site-title page-link animated" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> 
+		</div>
+
+		<nav>
+			<ul class="cd-secondary-nav">
+				<!--https://codegaze.github.io/2015/08/08/how-to-create-a-dynamic-navigation-menu-in-jekyll/  -->
+				{% for link in site.data.navigation %}
+					{% assign current = nil %}
+					{% if page.url contains link.url %}
+						{% assign current = 'active' %}
+					{% endif %}
+					<li class="{{ current }}">
+						<a class="page-link animated"  href="{{ link.url }}">{{ link.title }}</a>
+					</li>
+					{% unless forloop.last %}<span class="menu-separator"></span>{% endunless %}
+				{% endfor %}
+			</ul>
+		</nav> <!-- cd-nav -->
+
+		<a class="cd-primary-nav-trigger" href="#">
+			<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+		</a> <!-- cd-primary-nav-trigger -->
+	</header>
+	<nav>
+		<ul class="cd-primary-nav">
+			<li class="cd-label">Pages</li>
+            {% for link in site.data.navigation %}
+			{% assign current = nil %}
+			{% if page.url contains link.url %}
+				{% assign current = 'active' %}
+			{% endif %}
+			<li class="{{ current }}">
+				<a class="page-link"  href="{{ link.url }}">{{ link.title }}</a>
+			</li>
+			{% unless forloop.last %}<span class="menu-separator"></span>{% endunless %}
+			{% endfor %}
+            <!-- <li class="cd-label">Section Title</li>
+			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li> -->
+		</ul>
+  </nav>

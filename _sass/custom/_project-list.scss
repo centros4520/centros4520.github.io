@@ -1,0 +1,95 @@
+/* -------------------------------- 
+Project List
+https://ricostacruz.com/til/#toc
+-------------------------------- */
+.project__item {
+  display: block;
+  overflow: hidden;
+  padding: 6px 20px;
+  border:none;
+  box-shadow: none;
+  &:hover{
+     text-decoration:none;
+      .project__title {
+           text-decoration:underline;
+      }
+  }
+   .project__date {
+    display: block;
+    width: 140px;
+    font-size: 1em;
+    color:  $grey-color;
+    text-decoration:none;
+    font-family: $base-font-family1;
+    text-transform: uppercase
+    }
+   .project__title {
+        font-family: $base-font-family1;
+        font-size: 2rem;
+        line-height: 1.2em;
+   }
+   .project__excerpt{
+        margin-left:140px;
+        padding-bottom: 10px;
+        display:inline-block;
+        color: darken( $custom-brand-color-primary, 90% );//#900;
+        // font-size: 1.2em;
+    }
+    .project__viewall{
+      float: right;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      padding: 5px 0px 0px 0px;
+      border-top: 1px solid;
+      text-align: right;
+      min-width: 60%;
+  }
+}
+
+.project__container__next {
+      margin-top: 2rem;
+}
+
+@include medium-screen() {
+ .project__item {
+    padding-left: 0;
+    padding-right: 0;
+    .project__date {
+      // margin-top: 0.2em;
+      margin-top: 9px;
+      float: left;
+      text-align: right;
+      padding-right: 25px;
+    }    
+  }
+}
+
+@include small-screen() {
+.project__item {
+  padding-left: 0;
+  padding-right: 0;
+  .project__excerpt{
+    margin: 0;
+    display:block;
+    //padding: 0px 20px 10px 20px;
+  }
+  .project__year{
+    margin-left: 20px;
+  }
+  .project__viewall{
+    min-width: 100%;
+  }
+}
+}
+     
+// @include media-query($on-palm) {
+//   .project__excerpt{
+//     margin: 0;
+//     display:block;
+//     padding: 0px 20px 10px 20px;
+//   }
+//   .project__year{
+//     margin-left: 20px;
+//   }
+// }
+

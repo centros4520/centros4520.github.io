@@ -1,0 +1,106 @@
+// @name Jekyll-Resume
+// @description All resume styles
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+// Homepage Intro Banner jumbotron>container>intro
+.jumbotron {
+  border-bottom: 0px solid #edefee;
+  padding: ($spacer * 0) 0;
+  margin-bottom: ($spacer * 1.5);
+}
+
+@include min-media-query($on-laptop) {
+ .jumbotron { 
+    padding: ($spacer * 1) 0 ($spacer * 1);
+    margin-bottom: ($spacer * 1.5);
+ }
+}
+
+.intro {
+  margin-bottom: ($spacer * 0);
+  &__pre,
+  &__post {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  &__main {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 5px 0 20px;
+    @media(min-width: 640px) {
+      font-size: 2.2rem;
+      // max-width: 80%;
+    }
+  }
+}
+
+// Section Heading
+// .section-title {
+//   text-transform: uppercase;
+//   letter-spacing: 4px;
+//   margin-bottom: ($spacer * 2);
+//   text-align: center;
+//   position: relative;
+//   @include relative-font-size(2);
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     bottom: -5px;
+//     left: 50%;
+//     margin-left: -25px;
+//     width: 50px;
+//     height: 1px;
+//     background: #222;
+//   }
+// }
+
+// 2 Col Highlight Sections
+dl {
+  margin-bottom: $spacer;
+}
+
+dt,
+dd {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: $spacer;
+  box-sizing: border-box; // Avoid spill-over due to padding
+}
+
+dt {
+  .title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+.morenotes{
+  margin-top:10px;
+}
+
+@media(min-width: 640px) {
+  dt,
+  dd {
+    margin-bottom: ($spacer * 1);
+  }
+  .articles {
+    dt {
+      width: 30%;
+      padding-right: ($spacer * 2);
+    }
+    dd {
+      width: 70%;
+    }
+  }
+  .projects {
+    dt,
+    dd {
+      width: 50%;
+    }
+  }
+}
