@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Demo comment
+title: Updated Demo comment
 ---
 ## this is a demo comment
 
