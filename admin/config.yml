@@ -19,4 +19,5 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
+      - { label: 'Category', name: 'category', widget: 'hidden', default: 'workshop'}
+      - { label: 'Excerpt', name: 'excerpt_separator', widget: 'hidden', default: '<!--more-->'}
