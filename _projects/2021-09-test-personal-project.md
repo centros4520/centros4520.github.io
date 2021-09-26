@@ -1,10 +1,10 @@
 ---
 layout: project
-title: Test Personal Project
+title: Updated Test Personal Project
 image_path: ""
 orderid: 25
-date: 2021-09-28
-blurb: this is blurb for test personal project
+date: 2021-09-15
+blurb: this is updated blurb for test personal project
 project_type: personal
 ---
-Personal Project Body Content
+updated Personal Project Body Content
