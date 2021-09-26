@@ -21,3 +21,4 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Category', name: 'category', widget: 'hidden', default: 'workshop'}
       - { label: 'Excerpt', name: 'excerpt_separator', widget: 'hidden', default: '<!--more-->'}
+      - { label: 'Another Category', name: 'category2', widget: 'select', options: ["cat1", "cat2", "cat3"], default: 'cat1'}
