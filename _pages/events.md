@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Event List
+permalink: /events/
 ---
 <!-- Html Elements for Search -->
 <!-- <header class="post-header">

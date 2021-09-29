@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Bookmark List
+permalink: /links/
 ---
 <!-- Html Elements for Search -->
 <!-- <header class="post-header">
