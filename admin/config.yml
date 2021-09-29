@@ -115,12 +115,12 @@ collections:
     label: 'Event'
     folder: '_events/'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-event-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'event' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Event Date', name: 'date', widget: 'datetime' }
-      - { label: 'Link URL', name: 'linkurl', widget: 'string' }
+      - { label: 'Event Date', name: 'date', widget: 'datetime',date_format: "DD-MM-YYYY",  time_format: false, format: "DD-MM-YYYY"}
+      - { label: 'Blurb', name: 'blurb', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
