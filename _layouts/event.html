@@ -22,6 +22,12 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     <div class="wrapper"> 
     {{ content }}
+
+    {% if page.tags.size != 0 %} <small style="font-size: 0.95rem;">Tags:
+      {% for tag in page.tags %}
+     <a class="tag-mark" href="/events/tag/#{{ tag | slugify }}" >{{ tag }}</a>
+      {% endfor %}</small>
+    {% endif %}
   </div>
   </div>
   

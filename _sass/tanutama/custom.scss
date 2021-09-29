@@ -309,6 +309,9 @@ ul.note-list li:last-child {
   font-family: $base-font-family1;
   text-transform: uppercase
 }
+a.tag-mark, a.codinfox-tag-mark{
+  color:#999;
+}
 
 @include min-media-query($on-laptop) {
   .project-list li,

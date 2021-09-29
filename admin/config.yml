@@ -124,3 +124,4 @@ collections:
       - { label: 'Event Date', name: 'date', widget: 'datetime',date_format: "DD-MM-YYYY",  time_format: false, format: "DD-MM-YYYY"}
       - { label: 'Blurb', name: 'blurb', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Tags", name: "tags", widget: "list",  max: 3, default: ["tag 1","tag 2"],  add_to_top: true, allow_add: true, minimize_collapsed: true,label_singular: "aaa nice"}

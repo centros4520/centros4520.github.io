@@ -54,7 +54,7 @@ https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll
       </a>
       {% if post.tags.size != 0 %}<br/><small style="font-size: 0.95rem;">Tags:
         {% for tag in post.tags %}
-       <a class="tag-mark" href="/notes/tag/#{{ tag | slugify }}" style="color:#999;" >{{ tag }}</a>
+       <a class="tag-mark" href="/notes/tag/#{{ tag | slugify }}" >{{ tag }}</a>
         {% endfor %}</small>
       {% endif %}
     </div>
@@ -76,7 +76,7 @@ https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll
       </a>
       {% if post.tags.size != 0 %}<br/> <small style="font-size: 0.95rem;">Tags:
       {% for tag in post.tags %}
-     <a class="tag-mark" href="/notes/tag/#{{ tag | slugify }}" style="color:#999;" >{{ tag }}</a>
+     <a class="tag-mark" href="/notes/tag/#{{ tag | slugify }}" >{{ tag }}</a>
       {% endfor %}</small>
       {% endif %}
    </div>

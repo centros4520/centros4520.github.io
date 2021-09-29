@@ -25,7 +25,7 @@ layout: default
 
     {% if page.tags.size != 0 %} <small style="font-size: 0.95rem;">Tags:
       {% for tag in page.tags %}
-     <a class="tag-mark" href="/notes/tag/#{{ tag | slugify }}" style="color:#999;" >{{ tag }}</a>
+     <a class="tag-mark" href="/notes/tag/#{{ tag | slugify }}" >{{ tag }}</a>
       {% endfor %}</small>
     {% endif %}
   </div>
