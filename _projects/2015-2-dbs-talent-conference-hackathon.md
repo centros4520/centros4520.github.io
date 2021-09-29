@@ -1,6 +1,6 @@
 ---
 layout: project
-title: DBS Talent Conference Hackathon
+title: DBS Talent Conference Hackathon with a long long title for testing
 image_path: 
 orderid: 9
 date: 2015-02-25

@@ -1,12 +1,8 @@
 ---
-layout: post
+layout: event
 title: "Nielsen Norman Group Singapore UX Conference"
 category: workshop
 excerpt_separator: <!--more-->
-tags: 
-- tag4 
-- tag3
-- long tag title
 ---
 
 {% include image-full.html file="/2017/1/nng-room.jpg" alt="Training Room" height="500px" type="full"%}
