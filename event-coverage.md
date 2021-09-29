@@ -1,7 +1,7 @@
 ---
 layout: page
 title: References
-permalink: /events/
+permalink: /references/
 ---
 
 This section highlights what others mentioned about projects or events of interests. 
