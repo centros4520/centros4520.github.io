@@ -7,6 +7,11 @@ blurb: "Conducted by Hazel Ho and Kim Tan from the Improv Company, “Improv 101
   improv theatre, getting right into the creative process with fellow
   improvisers / partners, engage audience and building an entire story /
   environment from nothing."
+tags:
+  - news
+  - improv
+  - long title of taglist
+  - new
 ---
 Improv or ‘improvised theatre’ is the form of theatre in which most or all of what is performed is unplanned or unscripted: created spontaneously by the performers, without use of prepared, written script. Nothing exists until it’s made real. The plot, characters and dialogue of the scenes are made up in the moment. The skills and processes of improvisation are increasingly applied outside the context of performing arts as a way to develop communication skills, creative problem solving, and teamwork. 
 
