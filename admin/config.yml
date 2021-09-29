@@ -98,3 +98,29 @@ collections:
       - { label: "Project Type", name: "project_type", widget: 'hidden', default: 'professional'}
     sortable_fields: ['date','orderid','title']
     summary: "{{date}} : {{title}}"
+  - name: 'link'
+    label: 'Link'
+    folder: '_links/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'link' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Link URL', name: 'linkurl', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'event'
+    label: 'Event'
+    folder: '_events/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'event' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Event Date', name: 'date', widget: 'datetime' }
+      - { label: 'Link URL', name: 'linkurl', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

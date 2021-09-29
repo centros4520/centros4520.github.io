@@ -1,0 +1,38 @@
+<!-- <header class="post-header">
+    <h1 class="section-title ">Design for a Cause</h1>
+</header> -->
+<h2>Things I bookmarked</h2>
+<section class="project__section">
+    {% assign projects = site.links | sort: 'date' | reverse %} 
+    {% for project in projects limit:4 %} 
+    {% capture this_year %} {{ project.date | date: "%Y" }} {% endcapture %} 
+    {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} 
+    {% if forloop.first %}
+    <div class="project__container">
+        <!-- <h4 class="project__year" id="{{ this_year }}-ref">Year {{this_year}}</h4> -->
+        <div class="project__list">
+    {% endif %}
+            <a class='project__item' href="{{ base }}{{ project.url | replace: " .html ", " " }}">
+                <div class='project__date'>{{ project.date | date: "%d %b %Y" }}</div>
+                <div class='project__title'>{{ project.title | strip_html | truncatewords:18 | escape }}</div>
+                <!-- <div class='project__excerpt'>{{ project.blurb | strip_html }} </div> -->
+            </a>
+   {% if forloop.last %}
+            <a class='project__item' href="{{ base }}/links/">
+                <div class='project__viewall'>View More Links  &rArr;</div>
+            </a>
+        </div>
+    </div>
+    <!--End of project__container-->
+    {% else %} 
+        {% if this_year != next_year %}
+        <!-- </div>
+        </div> -->
+        <!--End of project__container-->
+        <!-- <div class="project__container__next">
+            <h4 class="project__year project__year__next" id="{{ next_year }}-ref">Year {{next_year}}</h4>
+            <div class="project__list"> -->
+        {% endif %} 
+    {% endif %} 
+    {% endfor %}
+</section>

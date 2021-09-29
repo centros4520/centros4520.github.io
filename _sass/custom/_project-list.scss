@@ -29,9 +29,11 @@ https://ricostacruz.com/til/#toc
         line-height: 1.2em;
    }
    .project__excerpt{
-        margin-left:140px;
-        padding-bottom: 10px;
-        display:inline-block;
+        // margin-left:140px;
+        // padding-bottom: 10px;
+        // display:inline-block;
+        float: right;
+        width: 80%;
         color: darken( $custom-brand-color-primary, 90% );//#900;
         // font-size: 1.2em;
     }
@@ -60,7 +62,11 @@ https://ricostacruz.com/til/#toc
       float: left;
       text-align: right;
       padding-right: 25px;
-    }    
+    }   
+    .project__title {
+      float: right;
+      width: 80%;
+    } 
   }
 }
 
@@ -72,6 +78,14 @@ https://ricostacruz.com/til/#toc
     margin: 0;
     display:block;
     //padding: 0px 20px 10px 20px;
+  }
+  .project__title {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+  }
+  .project__excerpt {
+    width: 100%;
+    float: none;
   }
   .project__year{
     margin-left: 20px;
