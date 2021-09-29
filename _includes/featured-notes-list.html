@@ -15,7 +15,7 @@
                 <div class='project__title'>{{ project.title | strip_html | truncatewords:18 | escape }}</div>
             </a>
    {% if forloop.last %}
-            <a class='project__item morenotes' href="{{ base }}/fieldnotes/">
+            <a class='project__item morenotes' href="{{ base }}/notes/">
                 <div class='project__viewall'>View More Notes  &rArr;</div>
             </a>
         </div>

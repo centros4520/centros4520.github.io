@@ -1,6 +1,10 @@
 - title: Notes
-  url: /fieldnotes/
+  url: /notes/
 - title: Projects
-  url: /projects/  
+  url: /projects/ 
+- title: Events
+  url: /events/  
+- title: Links
+  url: /links/   
 - title: About
   url: /about/  

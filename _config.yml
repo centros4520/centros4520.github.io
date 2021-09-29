@@ -61,14 +61,14 @@ job: UX designer
 
 article_navigation:
 - title: Archive
-  url: /fieldnotes/archive/   
+  url: /notes/archive/   
 - title: Category
-  url: /fieldnotes/category/  
+  url: /notes/category/  
 - title: Tag
-  url: /fieldnotes/tag/   
+  url: /notes/tag/   
 
 #https://jekyllrb.com/docs/permalinks/
-permalink: "/fieldnotes/:year/:month/:title/"
+permalink: "/notes/:year/:month/:title/"
 
 # excerpt_separator
 # http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/
@@ -77,7 +77,7 @@ excerpt_separator: <!--more-->
 # Gems
 # plugins: [jekyll-paginate]
 paginate: 5
-paginate_path: "/fieldnotes/page:num"
+paginate_path: "/notes/page:num"
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
@@ -89,9 +89,18 @@ sass:
 # Build Collections
 # https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-collections/
 collections:
+  pages:
+    output: true
+    permalink: /:name
   projects:
     output: true
     permalink: /:collection/:path/
+  links:
+    output: true
+    permalink: /links/:year/:month/:day/:slug
+  events:
+    output: true
+    permalink: /events/:year/:month/:day/:slug
 
 # Front Matter Defaults
 defaults:
@@ -106,6 +115,24 @@ defaults:
       type: posts
     values:
       layout: post
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "links"
+    values:
+      layout: "link"      
+  -
+    scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"      
 
 # Build settings
 markdown: kramdown
