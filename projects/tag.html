@@ -1,6 +1,6 @@
 ---
 layout:   page
-title:    Notes Tag
+title:    Projects Tag
 ---
 {% comment%}
 Here we generate all the tags.
@@ -8,7 +8,7 @@ https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll
 {% endcomment%}
 
 {% assign rawtags = "" %}
-{% for post in site.posts %}
+{% for post in site.projects %}
 {% assign ttags = post.tags | join:'|' | append:'|' %}
 {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
@@ -43,7 +43,7 @@ https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll
 {% for tag in tags %}
 <h2 id="{{ tag | slugify }}" style="margin-top: 5px;">{{ tag }}</h2>
 <ul class="codinfox-category-list">
-  {% for post in site.posts %}
+  {% for post in site.projects %}
   {% if post.tags contains tag %}
   <li>
     <div> <small>{{ post.date | date_to_string }}</small> : 
@@ -65,6 +65,3 @@ https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll
 </div>
 
 {% include notes-paginator.html %}
-
-<div class="custom-divider"></div>
-You can also <a href="/search">search</a> the site, view <a href="/notes/archive/">archive</a> or explore <a href="/notes/category/">categories</a>.
