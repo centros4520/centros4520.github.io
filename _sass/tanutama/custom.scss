@@ -462,6 +462,34 @@ Footer
 }
 /* -------------------------------- 
 
+SEARCH
+
+-------------------------------- */
+.result-category{
+  color:#828282;
+}
+
+ @include small-screen() {
+    #results-container {
+      margin: 2rem  1rem ;
+    }
+ }
+ @include medium-screen() {
+    #results-container {
+      margin: 2rem;
+      li{
+        float:left;
+        width:100%
+      }
+      .result-link{
+        float:right;
+        width:80%;
+      } 
+    }
+ }
+ 
+/* -------------------------------- 
+
 // Import partials.
 
 -------------------------------- */
