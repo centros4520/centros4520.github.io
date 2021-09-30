@@ -1,10 +1,11 @@
 ---
 layout: post
 title: New Entry with Category
+date: 29-09-2021
+category: ideas
 tags:
   - project 1
   - demo
-category: ideas
 ---
 Updated category netlify entry.
 
