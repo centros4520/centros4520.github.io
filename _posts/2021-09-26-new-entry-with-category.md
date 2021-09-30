@@ -1,7 +1,9 @@
 ---
 layout: post
 title: New Entry with Category
-category2: cat1
+tags:
+  - project 1
+  - demo
 ---
 Updated category netlify entry.
 

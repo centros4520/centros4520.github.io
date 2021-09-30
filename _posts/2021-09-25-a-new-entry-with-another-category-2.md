@@ -1,9 +1,11 @@
 ---
 layout: post
 title: A new entry with another category 2
-category: workshop
+category: insights
 excerpt_separator: <!--more-->
-category2: cat2
+tags:
+  - project 1
+  - demo
 ---
 sample values with more text
 

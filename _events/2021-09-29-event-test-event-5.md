@@ -1,7 +1,7 @@
 ---
 layout: event
-title: test event 5
-date: 29-09-2021
+title: event test 5
+date: 30-09-2021
 blurb: "Conducted by Hazel Ho and Kim Tan from the Improv Company, “Improv 101:
   Learning to Play” consists of 5 weekly 3-hour classes, covering the basics of
   improv theatre, getting right into the creative process with fellow

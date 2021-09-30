@@ -2,9 +2,11 @@
 layout: event
 title: "Human Centered Design with IDEO"
 category: workshop
-tag: tag1,tag2,tag3
+tag: 
+- tag1
+- tag2
+- tag3
 excerpt_separator: <!--more-->
-blurb: 'Co-create solution to engage customers and bring “Joyful Banking”'
 ---
 {% include image-full.html file="/2016/2/ideo-0.jpg" alt="demo caption" height="400px" type="full"%}
 This is an experiential human-centered design workshop organized by Singapore+Acumen, IDEO Singapore, Migrant Workers’ Centre and Lien Centre for Social Innovation. Using processes and tools developed by IDEO.org, participants collaborate to address design challenge around South Asian migrant workers by learning how to interview, understand their needs, gather inspiration, ideate, and create a quick prototype.
