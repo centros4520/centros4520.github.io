@@ -1,6 +1,7 @@
 ---
 layout: event
 title: "Jan Chipchase Field Research Masterclass"
+date: 08-12-2017
 category: workshop
 excerpt_separator: <!--more-->
 ---

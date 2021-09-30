@@ -1,6 +1,7 @@
 ---
 layout: event
 title: "Design Leadership - Identifying and Communicating the Value of Design"
+date: 10-03-2017
 category: workshop
 excerpt_separator: <!--more-->
 ---

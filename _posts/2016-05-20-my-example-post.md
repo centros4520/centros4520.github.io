@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Updated Demo comment
+date: 20-05-2016
+category: ideas
 ---
 ## this is a demo comment
 

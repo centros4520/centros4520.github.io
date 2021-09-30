@@ -1,6 +1,7 @@
 ---
 layout: event
 title: "Improv 101"
+date: 05-06-2017
 category: workshop
 excerpt_separator: <!--more-->
 ---

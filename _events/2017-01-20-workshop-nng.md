@@ -1,6 +1,7 @@
 ---
 layout: event
 title: "Nielsen Norman Group Singapore UX Conference"
+date: 20-01-2017
 category: workshop
 excerpt_separator: <!--more-->
 ---

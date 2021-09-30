@@ -1,6 +1,7 @@
 ---
 layout: event
 title: "Human Centered Design with IDEO"
+date: 16-04-2016
 category: workshop
 tag: 
 - tag1

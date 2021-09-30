@@ -1,6 +1,7 @@
 ---
 layout: event
 title: "Facilitating Powerful Conversation"
+date: 12-08-2017
 category: workshop
 excerpt_separator: <!--more-->
 ---

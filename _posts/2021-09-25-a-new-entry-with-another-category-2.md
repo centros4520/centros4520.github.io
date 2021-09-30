@@ -6,6 +6,7 @@ excerpt_separator: <!--more-->
 tags:
   - project 1
   - demo
+date: 25-09-2021
 ---
 sample values with more text
 

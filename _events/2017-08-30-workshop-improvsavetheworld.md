@@ -1,6 +1,7 @@
 ---
 layout: event
 title: "Using Improv to Save the World"
+date: 30-08-2017
 category: workshop
 excerpt_separator: <!--more-->
 ---

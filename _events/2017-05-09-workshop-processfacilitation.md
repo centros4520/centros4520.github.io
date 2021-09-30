@@ -1,6 +1,7 @@
 ---
 layout: event
 title: "Process Facilitation Workshop"
+date: 09-05-2017
 category: workshop
 excerpt_separator: <!--more-->
 ---
