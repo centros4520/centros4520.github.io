@@ -4,7 +4,7 @@
 <h2>Things I attended</h2>
 <section class="project__section">
     {% assign projects = site.events | sort: 'date' | reverse %} 
-    {% for project in projects limit:4 %} 
+    {% for project in projects limit:10 %} 
     {% capture this_year %} {{ project.date | date: "%Y" }} {% endcapture %} 
     {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} 
     {% if forloop.first %}

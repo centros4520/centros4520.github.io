@@ -1,7 +1,7 @@
 <!-- <header class="post-header">
     <h1 class="section-title ">Design for a Cause</h1>
 </header> -->
-<h2>Things I Do</h2>
+<h2>Ideas and Projects</h2>
 <section class="project__section">
     {% assign projects = site.projects | sort: 'date' | reverse %} 
     {% for project in projects limit:4 %} 
@@ -9,7 +9,7 @@
     {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} 
     {% if forloop.first %}
     <div class="project__container">
-        <!-- <h4 class="project__year" id="{{ this_year }}-ref">Year {{this_year}}</h4> -->
+        <h4 class="project__year" id="{{ this_year }}-ref">Year {{this_year}}</h4>
         <div class="project__list">
     {% endif %}
             <a class='project__item' href="{{ base }}{{ project.url | replace: " .html ", " " }}">

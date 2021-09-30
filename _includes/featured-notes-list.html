@@ -1,13 +1,13 @@
-<h2>Things I Learned</h2>
+<h2>Notes and Readings</h2>
 <section class="project__section">
  
     {% assign projects = site.posts | sort: 'date' | reverse %} 
-    {% for project in projects limit:2 %} 
+    {% for project in projects limit:5 %} 
     {% capture this_year %} {{ project.date | date: "%Y" }} {% endcapture %} 
     {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} 
     {% if forloop.first %}
     <div class="project__container">
-        <!-- <h4 class="project__year" id="{{ this_year }}-ref">Year {{this_year}}</h4> -->
+        <h4 class="project__year" id="{{ this_year }}-ref">Year {{this_year}}</h4>
         <div class="project__list">
     {% endif %}
             <a class='project__item' href="{{ base }}{{ project.url | replace: " .html ", " " }}">
