@@ -13,6 +13,7 @@ collections:
     folder: '_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: "{{date}} : {{title}}"
     editor:
       preview: true
     fields:
@@ -27,6 +28,7 @@ collections:
     folder: '_events/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-event-{{slug}}'
+    summary: "{{date}} : {{title}}"
     editor:
       preview: true
     fields:
@@ -36,25 +38,12 @@ collections:
       - { label: 'Blurb', name: 'blurb', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: "Tags", name: "tags", widget: "list",  max: 3, add_to_top: true, allow_add: true, minimize_collapsed: true}
-  - name: 'link'
-    label: 'Link'
-    folder: '_links/'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-link-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'link' }
-      - { label: 'Link Title', name: 'title', widget: 'string' }
-      - { label: 'Link Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Link URL', name: 'linkurl', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: "Tags", name: "tags", widget: "list",  max: 3, add_to_top: true, allow_add: true, minimize_collapsed: true}
   - name: 'project'
     label: 'Project'
     folder: '_projects/'
     create: true
     slug: '{{year}}-{{month}}-{{slug}}'
+    summary: "{{date}} : {{title}}"
     editor:
       preview: true
     fields:
@@ -68,7 +57,6 @@ collections:
       - { label: 'Image Path', name: 'image_path', widget: 'hidden', default: '' }
       - { label: "Tags", name: "tags", widget: "list",  max: 3, add_to_top: true, allow_add: true, minimize_collapsed: true}
     sortable_fields: ['date','orderid','title']
-    summary: "{{date}} : {{title}}"
     view_groups:
       - label: Year
         field: date
@@ -89,6 +77,21 @@ collections:
       - label: Drafts
         field: draft
         pattern: true
+  - name: 'link'
+    label: 'Link'
+    folder: '_links/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-link-{{slug}}'
+    summary: "{{date}} : {{title}}"
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'link' }
+      - { label: 'Link Title', name: 'title', widget: 'string' }
+      - { label: 'Link Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Link URL', name: 'linkurl', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Tags", name: "tags", widget: "list",  max: 3, add_to_top: true, allow_add: true, minimize_collapsed: true}
   # - name: 'personal_project'
   #   label: 'Project - Personal'
   #   folder: '_projects/'
