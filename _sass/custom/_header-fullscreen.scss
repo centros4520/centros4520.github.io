@@ -10,7 +10,6 @@ $base-overlay-color: rgba(253, 253, 253, 0.95) !default;
 $link-color:#06446e;
 $small-screen:768px;
 $medium-screen:1170px;
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -268,6 +267,7 @@ Primary Nav Trigger components
   }
 }
 
+
 @include media-query($small-screen) {
   .cd-primary-nav-trigger {
     width: 100px;
@@ -298,9 +298,13 @@ Primary Nav Trigger components
     }
   }
 }
-
-@include min-media-query($medium-screen) {
-
+$very-small-screen:600px;
+@include media-query($very-small-screen) {
+  .cd-primary-nav-trigger {
+    .cd-menu-text {
+      display: none;
+    }
+  }
 }
 /* -------------------------------- 
 
