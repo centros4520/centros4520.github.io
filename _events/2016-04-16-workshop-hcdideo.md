@@ -8,7 +8,7 @@ tag:
 - tag3
 excerpt_separator: <!--more-->
 ---
-{% include image-full.html file="/2016/2/ideo-0.jpg" alt="demo caption" height="400px" type="full"%}
+{% include image-full.html file="/2016/2/ideo-0.JPG" alt="demo caption" height="400px" type="full"%}
 This is an experiential human-centered design workshop organized by Singapore+Acumen, IDEO Singapore, Migrant Workers’ Centre and Lien Centre for Social Innovation. Using processes and tools developed by IDEO.org, participants collaborate to address design challenge around South Asian migrant workers by learning how to interview, understand their needs, gather inspiration, ideate, and create a quick prototype.
 <!--more-->
 
@@ -39,6 +39,6 @@ Human-centered design (HCD) is a creative approach to problem solving pioneered 
 
    Now that you’ve validated the usefulness of your solution with the end-user and gotten your design just right, it’s time to get your idea out into the world. If you’re designing software products, apps, or websites, go back to Phase 1 and repeat this process. With each new update that you implement, continue to observe your users, design for them, and use their feedback to direct your future solutions.
 
-{% include image-full.html file="/2016/2/ideo-1.jpg" alt="demo caption" height="500px" type="full"%}
-{% include image-full.html file="/2016/2/ideo-2.jpg" alt="demo caption" height="500px"  %}
-{% include image-full.html file="/2016/2/ideo-3.jpg" alt="demo caption" height="500px"  %}
+{% include image-full.html file="/2016/2/ideo-1.JPG" alt="demo caption" height="500px" type="full"%}
+{% include image-full.html file="/2016/2/ideo-2.JPG" alt="demo caption" height="500px"  %}
+{% include image-full.html file="/2016/2/ideo-3.JPG" alt="demo caption" height="500px"  %}
