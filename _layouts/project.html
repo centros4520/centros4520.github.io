@@ -9,6 +9,12 @@ layout: flexible
    <div class="wrapper"> 
   <p class="blurb">{{ page.blurb }}</p>  
    {{ content | replace: '<!--more-->', '<a class="anchor" id="read-more"></a>' }}
+
+   {% if page.tags.size != 0 %} <small style="font-size: 0.95rem;">Tags:
+    {% for tag in page.tags %}
+   <a class="tag-mark" href="/projects/tag/#{{ tag | slugify }}" >{{ tag }}</a>
+    {% endfor %}</small>
+  {% endif %}
    </div>
   </div>
   <!-- End of post-content -->
