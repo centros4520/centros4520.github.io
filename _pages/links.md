@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bookmark List
+title: Bookmark Links
 permalink: /links/
 ---
 <!-- Html Elements for Search -->
