@@ -1,6 +1,6 @@
 ---
 layout: event
-title: "Design Leadership - Identifying and Communicating the Value of Design"
+title: "Design Leadership with Robb Ziegler and Deb Mrazek"
 date: 10-03-2017
 category: workshop
 excerpt_separator: <!--more-->
@@ -65,3 +65,5 @@ This step is about integrating analysis by working on the intersection of roles,
 #### Design’s Pitch
 
 In this final step, we looked into ways to pitch and present design value metric system created for maximum impact. We developed 30-60-90 day plan which described activities such as inform and enlist stakeholders identified (data owners, key decision makers, partners and dependencies), implement metric visualisation to  communicate results (create compelling stories through numbers, graphic and infographics) and decide how to modify / refine the system further. 
+
+Reference: [Methodology DESIGN LEADERSHIP with Robb Ziegler and Deb Mrazek](https://methodology.sg/design-leadership/)

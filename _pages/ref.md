@@ -158,6 +158,7 @@ This section highlights what others mentioned about projects or events of intere
 
 - [SCDF Annual Report 2013 - 2014](https://www.scdf.gov.sg/content/dam/scdf_inter/download/AnnualReportFinal2014.pdf) highlighted ACES project
 - In 2017, [SCDF taps on technology to race against time](https://www.channelnewsasia.com/news/singapore/scdf-taps-on-technology-to-race-against-time-9968678) by CNA and [A rare peek behind the scenes at the nerve centre of SCDF operations](http://www.straitstimes.com/singapore/a-rare-peek-behind-the-scenes-at-the-nerve-centre-of-scdf-operations) by Straits Times showcase SCDF Command Centre
+- [MHA COS 2018](https://www.mha.gov.sg/home-team-news/story/detail/mha-cos-2018-995-what-s-your-emergency/) describes How the Singapore Civil Defence Force has strengthened its Emergency Medical Service capabilitie
 
 # 2012
 

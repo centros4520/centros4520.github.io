@@ -1,10 +1,17 @@
 ---
 layout: event
-title: "Using Improv to Save the World"
+title: "Using Improv to Save the World with Belina Raffy"
 date: 30-08-2017
 category: workshop
 excerpt_separator: <!--more-->
 ---
+
+This engaging workshop is for anyone interested in changing things for the better, and who want to boost their confidence, creativity, and delight about doing so.
+
+The workshop will cover:
+- Useful mindsets for the 'inner game' of creating change
+- Practicing the art of engaging others to create better solutions than you could have imaged
+- Deep listening, acting on your intuition, and short turn taking as a way to navigate complex systems.
 
 This 2.5-hour workshop by U.K.-based applied improv coach Belina Raffy. Applied improv is the application of concepts, ideas, and techniques from the world of improvisation into non-theatrical fields e.g. business, consulting, facilitating, etc. 
 
@@ -42,3 +49,4 @@ Some Improv exercise played
 - “Singing in circle”: Volunteer to sing within group circle, trust that others will offer replace them anytime he/she become uncomfortable. The exercise explore Bernie dekoven model of alienation, conformity and coliberation as experience of mutual transcendence.  
 - “Diamond shape dance”: 3 participants follow dance movement of the point person in the direction they’re facing. After 15 seconds, everyone jump clockwise and follow new leader. Leaders learn how to connect with followers they can’t see; think from their perspective; make it easy to follow through logical, continuous and deliberate movement. The exercise also demonstrate that play does happen when members are building upon each others and everyone have moment of leadership. 
 
+Reference: [Maffick](https://www.maffick.com/)

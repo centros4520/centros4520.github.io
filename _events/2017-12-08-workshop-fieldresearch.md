@@ -1,12 +1,12 @@
 ---
 layout: event
-title: "Jan Chipchase Field Research Masterclass"
+title: "Field Research Masterclass by Studio D"
 date: 08-12-2017
 category: workshop
 excerpt_separator: <!--more-->
 ---
 
-Jan Chipchase gained his reputation as an extreme immersion researcher who specialise in identifying nuanced patterns of human behaviour from dense-urban to harsh, edge-of-grid locations. 
+Jan Chipchase from Studio D gained his reputation as an extreme immersion researcher who specialise in identifying nuanced patterns of human behaviour from dense-urban to harsh, edge-of-grid locations. 
 
 <!--more-->
 {% include image-full.html file="/2017/12/field.jpg" alt="Topic" height="600px"%}
@@ -39,3 +39,5 @@ Sensemaking / Data synthesis is about breaking down data into parts, creating ne
 
 ### Session 7: Sharing and Impact: Apply ### 
 This is about having value and impact long after the project is over. We looked at delivery of project assets, managing team’s emotional dynamics and having decompression time to close project experience. 
+
+Reference: [Studio D](https://studiodradiodurans.com/products/field-study-fundamentals-masterclass)

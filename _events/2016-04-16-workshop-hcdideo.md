@@ -1,12 +1,8 @@
 ---
 layout: event
-title: "Human Centered Design with IDEO"
+title: "Human Centered Design with Acumen and IDEO"
 date: 16-04-2016
 category: workshop
-tag: 
-- tag1
-- tag2
-- tag3
 excerpt_separator: <!--more-->
 ---
 {% include image-full.html file="/2016/2/ideo-0.JPG" alt="demo caption" height="400px" type="full"%}

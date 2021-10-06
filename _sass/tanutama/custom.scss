@@ -230,7 +230,11 @@ figcaption:before {
   width: 20%;
   border-top: 5px solid $grey-color-light;
 }
-
+@include small-screen() {
+  figure > img{
+    height: auto;
+  }
+}
 /* -------------------------------- 
 
 Content

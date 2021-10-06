@@ -17,7 +17,13 @@ Attended by more than 180 participants, top 20 teams was then selected to pitch 
  
 Our team proposed gamification of collectible cards that the students can use to play, challenge and exchange with their friends as they borrow and read books from school library.
  
-
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/sKf-6J0Ai3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<style>
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+</style>
 
 
 

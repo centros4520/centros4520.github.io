@@ -1,6 +1,6 @@
 ---
 layout: event
-title: "Facilitating Powerful Conversation"
+title: "Facilitating Powerful Conversation by The Thought Collective"
 date: 12-08-2017
 category: workshop
 excerpt_separator: <!--more-->
@@ -14,3 +14,4 @@ As practitioners in Social Innovation sectors, they both believe that all change
 
 In a larger context, this training is about inspiring participants to use more empathetic approach to address complex problems we face as a society and play a part in building Singapore’s social and emotional capital. 
 
+Reference: [The Thought Collective](https://thethoughtcollective.arlo.co/w/courses/1-facilitating-powerful-conversations-level-1)

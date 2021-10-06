@@ -1,6 +1,6 @@
 ---
 layout: event
-title: "Process Facilitation Workshop"
+title: "Process Facilitation Workshop by Idialogue"
 date: 09-05-2017
 category: workshop
 excerpt_separator: <!--more-->
@@ -28,5 +28,5 @@ The workshop explained core facilitation practice such as active listening, ask 
 
 They must also be able to set aside their personal views, take a step back from bringing the detailed content, and focus purely on the “group process”. In this way, facilitator could bring shared understanding, get the best ideation from all members and bring the event toward successful decision, solution or conclusion. As such, facilitation is considered to become an increasingly important skill for organizations in order to harness and leverage those 'diversity of thought' productively. 
 
-
+Reference: [idialogue.sg](http://www.idialogue.sg/)
 
